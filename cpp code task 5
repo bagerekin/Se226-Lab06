@@ -1,0 +1,35 @@
+#include <iostream>
+ using namespace std;
+ 
+
+int factorial(int n) {
+     
+     if (n <= 1) {
+         return 1;
+     }
+     
+     return n * factorial(n - 1);
+ }
+ 
+ int factorial() {
+     int n;
+ 
+     cout << "Enter a number to calculate its factorial: ";
+     cin >> n;
+ 
+    
+     if (n <= 1) {
+         return 1;
+     }
+     return n * factorial(n - 1);
+ }
+ 
+ int main() {
+ 
+     int result = factorial();  
+ 
+    
+     cout << "The factorial of the number is: " << result << endl;
+ 
+     return 0;
+ }
